@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<title>Page Title</title>
+	</head>
+	<body>
+	
+	<h1>Nitesh</h1>
+	{{range .Into}}
+	<li>{{uc .First}}</li>
+	<li>{{uc .Last}}</li>
+	{{end}}
+
+	{{range .Fu}}
+	<li>{{ct .Car}}</li>
+	<li>{{.Number}}</li>
+	{{end}}
+
+	</body>
+	</html>
