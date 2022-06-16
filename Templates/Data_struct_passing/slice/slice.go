@@ -6,9 +6,9 @@ import (
 )
 
 func main(){
-	tpl := template.Must(template.ParseFiles("index.html"))
+	tpl := template.Must(template.ParseFiles("slice_index.html"))
 
 	sl := []int{1,2,3,4,5,6,7,8}
 
-	_ = tpl.ExecuteTemplate(os.Stdout,"index.html",sl)
+	_ = tpl.ExecuteTemplate(os.Stdout,"slice_index.html",sl)
 }
